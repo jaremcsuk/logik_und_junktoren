@@ -23,9 +23,9 @@ public class Junktoren {
     public static Wahrheitswert nand(Wahrheitswert a, Wahrheitswert b) {
         checkParameter(a, b);
         if (a == WAHR & b == WAHR) {
-            return FALSCH;
+            return WAHR;
         }
-        return WAHR;
+        return FALSCH;
     }
 
     public static Wahrheitswert not(Wahrheitswert a) {
