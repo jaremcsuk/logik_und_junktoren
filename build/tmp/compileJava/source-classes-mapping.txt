@@ -1,0 +1,14 @@
+diehard/Main.java
+ diehard.Main
+diehard/Warenkorb.java
+ diehard.Warenkorb
+arithmetik/Summe.java
+ arithmetik.Summe
+arithmetik/Mittelwert.java
+ arithmetik.Mittelwert
+logik/Wahrheitswert.java
+ logik.Wahrheitswert
+logik/Junktoren.java
+ logik.Junktoren
+diehard/DieHardSale.java
+ diehard.DieHardSale

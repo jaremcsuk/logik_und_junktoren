@@ -1,0 +1,22 @@
+logik/JunktorenTest.java
+ logik.JunktorenTest
+ logik.JunktorenTest$1
+ logik.JunktorenTest$2
+diehard/DieHardSaleTest.java
+ diehard.DieHardSaleTest
+ diehard.DieHardSaleTest$1
+ diehard.DieHardSaleTest$2
+diehard/WarenkorbTest.java
+ diehard.WarenkorbTest
+ diehard.WarenkorbTest$1
+ diehard.WarenkorbTest$2
+logik/onlyNot.java
+ logik.onlyNot
+arithmetik/SummeTest.java
+ arithmetik.SummeTest
+ arithmetik.SummeTest$1
+ arithmetik.SummeTest$2
+ arithmetik.SummeTest$3
+ arithmetik.SummeTest$4
+arithmetik/MittelwertTest.java
+ arithmetik.MittelwertTest

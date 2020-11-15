@@ -1,0 +1,103 @@
+= Professionelle Softwareentwicklung: Pflichtabgabe 6
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== Abgabe
+
+Die Abgabe erfolgt, indem Sie Ihre Lösung in Ihr GitHub Repository pushen. Bitte überprüfen Sie über die GitHub Webseite, dass dies funktioniert hat.
+
+IMPORTANT: Die Frist für die Abgabe ist Freitag, der 3.7.2020 um 12:00 Uhr.
+
+== Testing
+
+WARNING: Um die Aufgabe zu lösen, sollten Sie das Arbeitsblatt von Woche 11 bearbeitet haben. 
+
+Diese Pflichtaufgabe wird sich mit Tests befassen.
+
+=== Beweise und Gegenbeispiele
+Beweisen oder widerlegen Sie *ausschließlich* mit Hilfe von Unit-Tests die Korrektheit der Klassen `Junktoren`, `Mittelwert` und `Summe`.
+
+Wenn es mehr als einen Fehler gibt, schreiben Sie für jeden Fehler einen Test. Wenn Sie die Korrektheit mit Tests widerlegt haben, dann reparieren Sie den Code.
+Dokumentieren Sie, was das Problem war, wodurch es ausgelöst wird und wie Sie es repariert haben.
+
+Ihre Tests müssen mit JUnit 5 geschrieben sein und AssertJ für die Assertions verwenden. 
+
+TIP: Denken Sie daran, was ein Beweis ist! 
+
+=== Eine getestete Anwendung schreiben
+Ein Online Händler möchte die "Stirb langsam" Blu-Rays Disks (BD) promoten und bewirbt daher eine Rabatt-Aktion. Der Grundpreis für jede BD beträgt 8 Euro. Wenn man aber zwei verschiedene Teile der Reihe kauft, bekommt man einen Rabatt von 5% auf den Preis der beiden BDs. Kauft man drei verschiedene Teile bekommt man einen Rabatt von 10%, bei vier Teilen 20% und wenn man alle fünf Teile kauft bekommt man einen Rabatt von 25%. Der Preis wird auf ganze Cents abgerundet. Für die Rabatte ist es wichtig, dass es immer verschiedene Teile sind! Ihre Aufgabe wird es sein, den für den Kunden günstigsten Preis für Warenkörbe zu berechnen. Es gibt durch die Wahl der Rabattprozente einige Randfälle/Anomalien, die Implementierung der Geschäftslogik ist nicht ganz optimal. Die Implementierung darf nicht naiv sein, also alle möglichen Fälle aufzählen, da das aus Performancegründen nicht akzeptabel ist.
+
+Beispiele:
+
+|===
+|Warenkorb |Preis (EUR)|Bemerkung
+
+|2 x Teil 1
+|16.00
+|Kein Rabatt, da es der gleiche Teil ist
+
+|Teil 1 + Teil 2
+|15.20
+|
+
+|2 x Teil 1 + Teil 2
+|23.20
+|Es gibt Rabatt auf Teil 1 + Teil 2, aber nicht auf die zweite BD von Teil 1
+
+|2 x Teil 1 + 2 x Teil 2
+|30.40
+|Es gibt 2 Mal Rabatt auf die beiden Teile (aber keinen 20% Rabatt auf vier BDs)
+
+|Teil 1, 2, 3 und 4
+|25.60
+|20% Rabatt auf die vier BDs
+|===
+
+Wir geben einen Rahmen vor, den wir für eigene Tests verwenden. Sie dürfen diesen Rahmen nicht ändern!
+
+- Es gibt eine statische Methode `create` in der Klasse `Warenkorb`, mit der ein Warenkorb erzeugt wird. Wie Sie den Warenkorb intern repräsentieren ist Ihnen überlassen. Methoden, die Sie in `Warenkorb` schreiben und die Logik beinhalten, müssen Sie vollständig testen. 
+
+- Es gibt eine statische Methode `printSumme` in der Klasse `DieHardSale`, die eine `PrintStream` Instanz (z.B. `System.out`) und einen Warenkorb bekommt und den Preis für den Warenkorb auf dem `PrintStream` ausgibt.
+
+Schreiben Sie in der Klasse `DieHardSale` eine Methode, die einen Warenkorb übergeben bekommt und die Summe zurückgibt. Diese Methode soll in `printSumme` aufgerufen werden. 
+
+Wir geben nicht vor, wie Sie diese Methode nennen oder wie Sie die Preise repräsentieren, aber diese Methode muss vollständig getestet sein, d.h. jeder mögliche Ausführungspfad durch die Methode muss getestet sein. Sie können zur Prüfung Ihre IDE verwenden. In IntellJ ist es eingebaut und kann mit "Run with Coverage" gestartet werden, in Eclipse benötigen Sie das "EclEmma"-Plugin. In Gradle können Sie das "JaCoCo"-Plugin (Java Code Coverage) verwenden
+
+**Hinweise zur Bewertung**
+
+*Beide* Aufgaben müssen sinnvoll bearbeitet sein, damit diese Pflichtabgabe als bestanden bewertet werden kann. 
+
+// =============================================================================== 
+
+== Hinweise zur Abgabe
+
+Der folgende Text stand in den vorhergehenden Abgaben oben und gilt auch weiterhin.
+
+=== Strukturierung von Textabgaben
+
+Sie sollten Ihre schriftlichen Ausarbeitungen, soweit verlangt, als https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc] formatieren. Die READMEs, die Sie in Ihren bisherigen Projekten finden konnten, sind auch allesamt mit AsciiDoc formatiert und daran können Sie sich orientieren. Github rendert AsciiDoc zu einer schönen Seite zusammen. AsciiDoc-Dateien erkennt man meistens an der Dateiendung `.adoc`.
+
+AsciiDoc ist eine Markup-Formatierungssprache, die in reiner Textform mit jedem Editor geschrieben werden kann. Dafür sind prinzipiell keine Tools notwendig. Sie können aber dennoch ein paar Tools / Plugins in Ihre Editoren installieren, damit Sie ein wenig farbliche / technische Unterstützung beim Schreiben erhalten können. Für viele Editoren gibt es Plugins (https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode[VS Code / VS Codium], https://marketplace.eclipse.org/content/asciidoctor-editor[für Eclipse], https://plugins.jetbrains.com/plugin/7391-asciidoc[IntelliJ], uvm.). Nutzen Sie was Ihnen am Besten gefällt.
+
+==== Videos
+
+Es gibt viele Anleitungen zur Verwendung AsciiDoc. Hier sind ein paar Ideen:
+
+* Vor ein paar Jahren hat Jens einen Screencast erstellt. Die ersten Minuten sind aufschlussreich für die generelle Verwendung von AsciiDoc. Von uns verwendet aber niemand mehr den Editor Atom, weshalb die Hinweise zu den Plugins nicht mehr so hilfreich sind: https://www.youtube.com/watch?v=w9ZE-K5XBvc. Atom wurde von vielen EntwicklerInnen durch den Editor https://code.visualstudio.com/[VS Code] oder der freien Variante https://vscodium.com/[VS Codium] abgelöst.
+* Diverse Screencasts finden sich auf Youtube. Die ersten Minuten dieses Talks geben auch einen guten Einblick: https://www.youtube.com/watch?v=MyhiD65qaUI
+
+
+=== Rechtschreibung
+
+Sie müssen sich an geltende Rechtschreibregeln halten. Sind Ihre schriftliche Abgaben nicht leserlich oder verständlich geschrieben, können wir diese Abgaben nicht als bestanden werten. Bitte achten Sie selbst also auf eine korrekte Orthographie und Grammatik.
+
+Die Abgaben dürfen entweder in _deutscher_ oder _englischer_ Sprache verfasst werden.
