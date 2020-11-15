@@ -21,5 +21,5 @@ jobs:
     - name: Build Gradle
       run: ./gradlew build
       
-    - name: Test with Gradle
-      run: ./gradlew check
+    - name: new release Gradle
+      run: ./gradlew distZip
