@@ -17,15 +17,10 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
+        
+    - name: new release Gradle
+      run: ./gradlew test 
 
     - name: Build Gradle
       run: ./gradlew build
       
-    - name: new release Gradle
-      run: ./gradlew test
-      
-    - name: Unit tests results
-      uses: actions/upload-artifact@v1
-      with:
-          name: unit-tests-results
-          path: app/build/reports/tests/testDebugUnitTest/index.html
