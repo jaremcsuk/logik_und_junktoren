@@ -23,8 +23,14 @@ jobs:
       
   gradle_check:
     runs-on: ubuntu-latest
-
     needs: gradle_test
     steps:
+    - uses: actions/checkout@v1
+      name: Git Checkout
+      
+    - name: Java installieren
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
     - name: gradle check
       run: ./gradlew check
