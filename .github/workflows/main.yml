@@ -3,7 +3,10 @@
 
 name: Build and Test with Gradle
 
-on:  [push, pull_request]
+on:  
+  push: 
+     branches:
+       - master
 
 jobs:
   gradle_test:
