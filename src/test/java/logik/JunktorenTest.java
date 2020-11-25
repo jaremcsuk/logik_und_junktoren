@@ -37,7 +37,7 @@ public class JunktorenTest {
     //@DisplayName("NAND: a und b  sind beide WAHR. Der Rückgabewer soll FALSCH sein")
     void test_nand_beide_wahr(){
         Wahrheitswert result = nand(a_wahr, b_wahr);
-        assertThat(result).isEqualTo(FALSE);
+        assertThat(result).isEqualTo(FALSCH);
     }
 
     @Test
