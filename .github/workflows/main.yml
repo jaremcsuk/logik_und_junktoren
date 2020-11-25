@@ -18,9 +18,9 @@ jobs:
       with:
         java-version: 11
         
-    - name: new release Gradle
+    - name: gradle test
       run: ./gradlew test 
 
-    - name: Build Gradle
-      run: ./gradlew build
+    - name: gradle check
+      run: ./gradlew check
       
