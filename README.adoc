@@ -13,6 +13,7 @@ endif::[]
 
 == Abgabe
 
+
 Die Abgabe erfolgt, indem Sie Ihre Lösung in Ihr GitHub Repository pushen. Bitte überprüfen Sie über die GitHub Webseite, dass dies funktioniert hat.
 
 IMPORTANT: Die Frist für die Abgabe ist Freitag, der 3.7.2020 um 12:00 Uhr.
