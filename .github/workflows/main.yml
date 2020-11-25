@@ -26,7 +26,10 @@ jobs:
            echo "The previous step should exiting with 42 code and this code should not run"
       
     
-    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: my-artifact
+        path: newFolder
     
     
       
