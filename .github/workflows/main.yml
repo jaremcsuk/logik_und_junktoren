@@ -26,10 +26,14 @@ jobs:
            echo "The previous step should exiting with 42 code and this code should not run"
       
     
+    - run: mkdir -p path/to/artifact
+
+    - run: echo hello > path/to/artifact/world.txt
+
     - uses: actions/upload-artifact@v2
       with:
         name: my-artifact
-        path: newFolder
+        path: path/to/artifact/world.txt
     
     
       
