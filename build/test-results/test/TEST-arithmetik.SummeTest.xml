@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="arithmetik.SummeTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-10-07T19:00:52" hostname="lenovo" time="0.022">
+<testsuite name="arithmetik.SummeTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2020-11-25T20:46:39" hostname="lenovo" time="0.076">
   <properties/>
-  <testcase name="test_only_negativ_numbers()" classname="arithmetik.SummeTest" time="0.002"/>
-  <testcase name="test_min_long_values()" classname="arithmetik.SummeTest" time="0.001"/>
-  <testcase name="test_parameter_zeigt_auf_null()" classname="arithmetik.SummeTest" time="0.001"/>
+  <testcase name="test_only_negativ_numbers()" classname="arithmetik.SummeTest" time="0.007"/>
+  <testcase name="test_min_long_values()" classname="arithmetik.SummeTest" time="0.007"/>
+  <testcase name="test_parameter_zeigt_auf_null()" classname="arithmetik.SummeTest" time="0.004"/>
   <testcase name="test_parameter_listElement_zeigt_auf_null()" classname="arithmetik.SummeTest" time="0.005"/>
-  <testcase name="test_max_long_values()" classname="arithmetik.SummeTest" time="0.002"/>
-  <testcase name="test_only_positive_numbers()" classname="arithmetik.SummeTest" time="0.001"/>
-  <testcase name="test_linkedList()" classname="arithmetik.SummeTest" time="0.001"/>
-  <testcase name="test_negativ_and_positiv_numbers()" classname="arithmetik.SummeTest" time="0.0"/>
-  <testcase name="test_all_zeros_values()" classname="arithmetik.SummeTest" time="0.001"/>
-  <testcase name="test_values_with_zeros()" classname="arithmetik.SummeTest" time="0.0"/>
-  <testcase name="test_Stack()" classname="arithmetik.SummeTest" time="0.002"/>
+  <testcase name="test_max_long_values()" classname="arithmetik.SummeTest" time="0.003"/>
+  <testcase name="test_only_positive_numbers()" classname="arithmetik.SummeTest" time="0.002"/>
+  <testcase name="test_linkedList()" classname="arithmetik.SummeTest" time="0.004"/>
+  <testcase name="test_negativ_and_positiv_numbers()" classname="arithmetik.SummeTest" time="0.002"/>
+  <testcase name="test_all_zeros_values()" classname="arithmetik.SummeTest" time="0.003"/>
+  <testcase name="test_values_with_zeros()" classname="arithmetik.SummeTest" time="0.007"/>
+  <testcase name="test_Stack()" classname="arithmetik.SummeTest" time="0.005"/>
   <system-out><![CDATA[Das Element der Liste Summanden kann nicht null sein
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

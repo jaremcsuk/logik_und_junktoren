@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="diehard.WarenkorbTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-10-07T19:00:51" hostname="lenovo" time="0.124">
+<testsuite name="diehard.WarenkorbTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2020-11-25T20:46:39" hostname="lenovo" time="0.254">
   <properties/>
-  <testcase name="test_isLeer_true()" classname="diehard.WarenkorbTest" time="0.096"/>
-  <testcase name="test_getAllTeile()" classname="diehard.WarenkorbTest" time="0.008"/>
-  <testcase name="test_instanziirung_warenkorb_mit_101_Exemplare_pro_Teil()" classname="diehard.WarenkorbTest" time="0.009"/>
-  <testcase name="test_isLeer_false()" classname="diehard.WarenkorbTest" time="0.001"/>
-  <testcase name="test_instanziirung_warenkorb_mit_negarivenZahlen()" classname="diehard.WarenkorbTest" time="0.001"/>
-  <testcase name="test_if_warenkorb_is_korrekt_instanziiert()" classname="diehard.WarenkorbTest" time="0.004"/>
+  <testcase name="test_isLeer_true()" classname="diehard.WarenkorbTest" time="0.203"/>
+  <testcase name="test_getAllTeile()" classname="diehard.WarenkorbTest" time="0.018"/>
+  <testcase name="test_instanziirung_warenkorb_mit_101_Exemplare_pro_Teil()" classname="diehard.WarenkorbTest" time="0.004"/>
+  <testcase name="test_isLeer_false()" classname="diehard.WarenkorbTest" time="0.003"/>
+  <testcase name="test_instanziirung_warenkorb_mit_negarivenZahlen()" classname="diehard.WarenkorbTest" time="0.002">
+    <skipped/>
+  </testcase>
+  <testcase name="test_if_warenkorb_is_korrekt_instanziiert()" classname="diehard.WarenkorbTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

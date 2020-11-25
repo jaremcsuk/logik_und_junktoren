@@ -35,13 +35,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.014s</div>
+<div class="counter">0.037s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,7 +50,7 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
+<div class="infoBox skipped" id="successRate">
 <div class="percent">100%</div>
 <p>successful</p>
 </div>
@@ -78,43 +78,43 @@
 <tr>
 <td class="success">Null parameter ist nicht erlaubt und throws exception</td>
 <td class="success">test_1_parameter_is_null()</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">AND: a = FALSCH, b = WAHR. Der Rückgabewert soll FALSCH sein</td>
 <td class="success">test_and_a_falsch_b_wahr()</td>
-<td class="success">0s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">AND: a = WAHR, b  = FALSCH. Der Rückgabewert soll FALSCH sein</td>
 <td class="success">test_and_a_wahr_b_falsch()</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">AND: a und b sind beide FALSCH. Der Rückgabewert soll FALSCH sein</td>
 <td class="success">test_and_beide_falsch()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">AND: a und b sind beide WAHR. Der Rückgabewert soll WAHR sein</td>
 <td class="success">test_and_beide_wahr()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Null parameter sind nicht erlaubt und throws exception</td>
 <td class="success">test_both_parameters_are_null()</td>
-<td class="success">0.001s</td>
+<td class="success">0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">implies: a = Falsch, b = WAHR. Der Rückgabewert soll FALSCH sein</td>
 <td class="success">test_implies_a_falsch_b_wahr()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -126,61 +126,61 @@
 <tr>
 <td class="success">implies: a und b sind beide FALSCH. Der Rückgabewert soll WAHR sein</td>
 <td class="success">test_implies_beide_falsch()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">implies: a und b sind beide WAHR. Der Rückgabewert soll WAHR sein</td>
 <td class="success">test_implies_beide_wahr()</td>
-<td class="success">0s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">NAND: a = FALSCH, b = WAHR. Der Rückgabewer soll WAHR sein</td>
 <td class="success">test_nand_a_falsch_b_wahr()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">NAND: a = WAHR, b = FALSCH. Der Rückgabewer soll WAHR sein</td>
 <td class="success">test_nand_a_wahr_b_falsch()</td>
-<td class="success">0s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">NAND: a und b  sind beide FALSCH. Der Rückgabewer soll WAHR sein</td>
 <td class="success">test_nand_beide_falsch()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">NAND: a und b  sind beide WAHR. Der Rückgabewer soll FALSCH sein</td>
-<td class="success">test_nand_beide_wahr()</td>
-<td class="success">0.001s</td>
-<td class="success">passed</td>
+<td class="skipped">test_nand_beide_wahr()</td>
+<td class="skipped">test_nand_beide_wahr()</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
 </tr>
 <tr>
 <td class="success">OR: a = FALSCH, b = WAHR. Der Rückgabewert soll WAHR sein</td>
 <td class="success">test_or_a_falsch_b_wahr()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">OR: a = WAHR, b = FALSCH. Der Rückgabewert soll WAHR sein</td>
 <td class="success">test_or_a_wahr_b_falsch()</td>
-<td class="success">0.001s</td>
+<td class="success">0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">OR: a und b sind beide FALSCH. Der Rückgabewert soll FALSCH sein</td>
 <td class="success">test_or_beide_falsch()</td>
-<td class="success">0.001s</td>
+<td class="success">0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">OR: a und b sind beide WAHR. Der Rückgabewert soll WAHR sein</td>
 <td class="success">test_or_beide_wahr()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -193,7 +193,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 07.10.2020, 21:00:52</p>
+<a href="http://www.gradle.org">Gradle 6.5</a> at 25.11.2020, 21:46:40</p>
 </div>
 </div>
 </body>
